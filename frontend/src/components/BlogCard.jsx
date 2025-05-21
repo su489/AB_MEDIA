@@ -29,7 +29,7 @@ export default function BlogCard({
 
   const handleDelete = async () => {
     try {
-      const { data } = await axios.delete(`https://ab-media.onrender.com/api/blog/delete-blog/${id}`);
+      const { data } = await axios.delete(`https://ba-medai.onrender.com/api/blog/delete-blog/${id}`);
       if (data?.success) {
         alert("Blog Deleted");
         window.location.reload();

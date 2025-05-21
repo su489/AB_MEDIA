@@ -24,7 +24,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("https://ab-media.onrender.com/api/user/register", {
+      const { data } = await axios.post("https://ba-medai.onrender.com/api/user/register", {
         username: inputs.name,
         email: inputs.email,
         password: inputs.password,

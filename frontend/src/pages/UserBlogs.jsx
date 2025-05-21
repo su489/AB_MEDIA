@@ -8,7 +8,7 @@ const UserBlogs = () => {
   const getUserBlogs = async () => {
     try {
       const id = localStorage.getItem("userId");
-      const { data } = await axios.get(`https://ab-media.onrender.com/api/blog/user-blog/${id}`);
+      const { data } = await axios.get(`https://ba-medai.onrender.com/api/blog/user-blog/${id}`);
       if (data?.success) {
         setBlogs(data?.userBlog.blogs);
       }

@@ -26,7 +26,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("https://ab-media.onrender.com/api/user/login", {
+      const { data } = await axios.post("https://ba-medai.onrender.com/api/user/login", {
         email: inputs.email,
         password: inputs.password,
       });
