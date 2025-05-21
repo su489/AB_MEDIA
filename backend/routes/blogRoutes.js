@@ -6,16 +6,16 @@ import {
   getBlogByIdController,
   deleteBlogController,
   userBlogController,
-} from "../controllers/blogController.js"; // .js lagana zaroori hai ESM mein
+} from "../controllers/blogController.js";
 
 const router = express.Router();
 
 // Routes
-router.get("/all-blog", getAllBlogsController); // GET all blogs
-router.post("/create-blog", createBlogController); // POST create blog
-router.put("/update-blog/:id", updateBlogController); // PUT update blog
-router.get("/get-blog/:id", getBlogByIdController); // GET single blog
-router.delete("/delete-blog/:id", deleteBlogController); // DELETE blog
-router.get("/user-blog/:id", userBlogController); // GET user blogs (spelling fix bhi)
+router.get("/all-blog", getAllBlogsController); 
+router.post("/create-blog", createBlogController);
+router.put("/update-blog/:id", updateBlogController);
+router.get("/get-blog/:id", getBlogByIdController); 
+router.delete("/delete-blog/:id", deleteBlogController); 
+router.get("/user-blog/:id", userBlogController);
 
 export default router;
