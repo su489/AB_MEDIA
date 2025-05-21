@@ -40,7 +40,7 @@ const BlogDetails = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.put(`http://localhost:8000/api/blog/update-blog/${id}`, {
+      const { data } = await axios.put(`https://ab-media.onrender.com/api/blog/update-blog/${id}`, {
         title: inputs.title,
         description: inputs.description,
         image: inputs.image,
